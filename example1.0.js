@@ -16,7 +16,7 @@ let points;
 function setup(){
 
   //Create neural network
-  n = new neuralNetwork([8, 5, 5, 8]);
+  n = new neuralNetwork([8, 5, 8]);
 
   //Train beforehand on the data so we can do drawing only in draw.
   for(let j = 0; j < 100; j++){
