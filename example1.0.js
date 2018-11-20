@@ -1,10 +1,10 @@
 let n;
 
 let data = [
-  [[0,1,1,0,0,0,0,1], [1,0,0,0,0,0,0,0]], //a
-  [[0,1,1,1,0,0,1,1], [0,0,1,0,0,0,0,0]], //s
-  [[0,1,1,0,1,0,1,1], [0,1,0,0,0,0,0,0]], //k
-  [[0,1,1,1,1,0,1,0], [0,0,0,1,0,0,0,0]] //k
+  [[0,1,1,0,0,0,0,1], [1,0,0,0]], //a
+  [[0,1,1,1,0,0,1,1], [0,0,1,0]], //s
+  [[0,1,1,0,1,0,1,1], [0,1,0,0]], //k
+  [[0,1,1,1,1,0,1,0], [0,0,0,1]] //k
 ]
 
 let points;
@@ -12,7 +12,7 @@ let points;
 function setup(){
 
   //Create neural network
-  n = new neuralNetwork([8, 5, 8]);
+  n = new neuralNetwork([8, 5, 4]);
 
   //Train beforehand on the data so we can do drawing only in draw.
   for(let j = 0; j < 100; j++){
